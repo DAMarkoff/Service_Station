@@ -1,0 +1,306 @@
+      <!-- Title -->
+
+      <div class='row'>
+        <div class='col-lg-6'>
+          <h1 class="big-heading">Meet new and interesting services nearby.</h1>
+        </div>
+        <div class='col-lg-6'>
+          <img class='title-image' src="{{ url_for('static', filename='img/tires.jpg')}}" alt="tires-mockup">
+        </div>
+      </div>
+
+
+
+<!--Old index-->
+
+<!--{% extends "bootstrap/base.html" %}-->
+<!--{% import "bootstrap/wtf.html" as wtf %}-->
+
+
+<!--&lt;!&ndash; Styles &ndash;&gt;-->
+
+<!--{% block styles %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_styles.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--&lt;!&ndash; Content &ndash;&gt;-->
+
+<!--{% block content %}-->
+<!--    {% include "_navbar.html" %}-->
+<!--    {% include "_flash.html" %}-->
+
+<!--    <div class="jumbotron">-->
+<!--        {% if current_user.is_authenticated %}-->
+<!--            <h1>HELLO, {{ current_user.first_name }} {{ current_user.last_name }}qw</h1>-->
+<!--        {% else %}-->
+<!--            <h1>HELLO!!</h1>-->
+<!--        {% endif %}-->
+<!--    </div>-->
+
+<!--    {% include "_footer.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--&lt;!&ndash; Scripts &ndash;&gt;-->
+
+<!--{% block scripts %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_scripts.html" %}-->
+<!--{% endblock %}-->
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<!--Old login-->
+
+<!--{% extends "bootstrap/base.html" %}-->
+<!--{% import "bootstrap/wtf.html" as wtf %}-->
+
+
+<!--&lt;!&ndash; Styles &ndash;&gt;-->
+
+<!--{% block styles %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_styles.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--&lt;!&ndash; Content &ndash;&gt;-->
+
+<!--{% block content %}-->
+<!--    {% include "_navbar.html" %}-->
+<!--    {% include "_flash.html" %}-->
+
+<!--    <main class="content">-->
+<!--        <div class="jumbotron">-->
+<!--        <h1 class="form-title">Log In</h1>-->
+<!--        <div class="card">-->
+<!--          <div class="card-body">-->
+<!--            <p>{{ wtf.quick_form(form) }}</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        </div>-->
+<!--    </main>-->
+
+
+
+<!--&lt;!&ndash;    <div class="jumbotron">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="container login-form col-lg-3 col-md-6 col-sm-8">&ndash;&gt;-->
+<!--&lt;!&ndash;                {{ wtf.quick_form(form) }}&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--    {% include "_footer.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--&lt;!&ndash; Scripts &ndash;&gt;-->
+
+<!--{% block scripts %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_scripts.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<!--Old register-->
+
+<!--{% extends "bootstrap/base.html" %}-->
+<!--{% import "bootstrap/wtf.html" as wtf %}-->
+
+<!--&lt;!&ndash; StyEles2!111 &ndash;&gt;-->
+<!--&lt;!&ndash; Styles &ndash;&gt;-->
+
+<!--{% block styles %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_styles.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--&lt;!&ndash; Content &ndash;&gt;-->
+
+<!--{% block content %}-->
+<!--    {% include "_navbar.html" %}-->
+<!--    {% include "_flash.html" %}-->
+
+<!--    <main class="content">-->
+<!--        <div class="jumbotron">-->
+<!--        <h1 class="form-title">Register</h1>-->
+<!--        <div class="card">-->
+<!--          <div class="card-body">-->
+<!--            <p>{{ wtf.quick_form(form) }}</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        </div>-->
+<!--    </main>-->
+
+
+<!--&lt;!&ndash;    <div class="jumbotron">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="container registration-form col-lg-3 col-md-6 col-sm-8">&ndash;&gt;-->
+<!--&lt;!&ndash;                {{ wtf.quick_form(form) }}&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--    {% include "_footer.html" %}-->
+<!--{% endblock %}-->
+
+
+<!-- Scripts -->
+
+<!--{% block scripts %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_scripts.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<!--Old profile-->
+
+<!--{% extends "bootstrap/base.html" %}-->
+<!--{% import "bootstrap/wtf.html" as wtf %}-->
+
+<!--{% block styles %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_styles.html" %}-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="{{ url_for('.static', filename='css/user_profile_style.css') }}">&ndash;&gt;-->
+<!--{% endblock %}-->
+
+
+<!--{% block content %}-->
+<!--    {% include "_navbar.html" %}-->
+<!--    {% include "_flash.html" %}-->
+
+<!--&lt;!&ndash;    {% if current_user.is_authenticated %}&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="jumbotron">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="card" >&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="front" style="">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="large">{{ current_user }}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    {% else %}&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="jumbotron">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1>Anonimous!</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    {% endif %}&ndash;&gt;-->
+<!--    <main class="content">-->
+<!--        <div class="jumbotron">-->
+<!--            <h1 class="form-title">User Profile</h1>-->
+
+<!--            <div class="card">-->
+<!--              <div class="card-heading">-->
+<!--                <h2>Account</h2>-->
+<!--              </div>-->
+<!--              <div class="card-body">-->
+<!--                <p>Email: {{ current_user.email }}</p>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="card">-->
+<!--              <div class="card-heading">-->
+<!--                <h2>Account Statistics</h2>-->
+<!--              </div>-->
+<!--              <div class="card-body">-->
+<!--                <p>Joined on {{ current_user.created.strftime("%A, %B %d, %Y") }}</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </main>-->
+
+
+<!--    {% include "_footer.html" %}-->
+
+<!--{% endblock %}-->
+
+<!--{% block scripts %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_scripts.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<!--Old 404-->
+
+<!--{% extends "bootstrap/base.html" %}-->
+
+<!--{% block styles %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_styles.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--&lt;!&ndash; Content &ndash;&gt;-->
+
+<!--{% block content %}-->
+<!--    {% include "_navbar.html" %}-->
+<!--    {% include "_flash.html" %}-->
+
+<!--    <div class="jumbotron">-->
+<!--        <div>-->
+<!--            <img class="not-found-image img-responsive" src="{{ url_for('static', filename='img/404.png') }}" alt="404 image">-->
+<!--        </div>-->
+<!--        <div class="not-found">-->
+<!--            <p align="center">Return to the <a href="{{ url_for('main.index') }}">main</a> page.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    {% include "_footer.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--&lt;!&ndash; Scripts &ndash;&gt;-->
+
+<!--{% block scripts %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_scripts.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<!--Old 401-->
+
+
+<!--{% extends "bootstrap/base.html" %}-->
+
+<!--{% block styles %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_styles.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--&lt;!&ndash; Content &ndash;&gt;-->
+
+<!--{% block content %}-->
+<!--    {% include "_navbar.html" %}-->
+<!--    {% include "_flash.html" %}-->
+
+<!--    <div class="jumbotron">-->
+<!--        <div>-->
+<!--            <img class="not-authorized-image img-responsive" src="{{ url_for('static', filename='img/401.jpg') }}" alt="401 image">-->
+<!--        </div>-->
+<!--        <div class="not-found">-->
+<!--            <p align="center">Return to the <a href="{{ url_for('main.index') }}">main</a> page.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    {% include "_footer.html" %}-->
+<!--{% endblock %}-->
+
+
+<!--&lt;!&ndash; Scripts &ndash;&gt;-->
+
+<!--{% block scripts %}-->
+<!--    {{ super() }}-->
+<!--    {% include "_scripts.html" %}-->
+<!--{% endblock %}-->

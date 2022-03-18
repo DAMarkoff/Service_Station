@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <div class="jumbotron">
+        <div>
+            <img class="not-found-image img-responsive" src="{{ url_for('static', filename='img/404.png') }}" alt="404 image">
+        </div>
+        <div class="not-found">
+            <p align="center">Return to the <a href="{{ url_for('main.index') }}">main</a> page.</p>
+        </div>
+    </div>
+{% endblock %}

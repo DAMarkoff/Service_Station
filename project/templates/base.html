@@ -1,0 +1,37 @@
+{% extends "bootstrap/base.html" %}
+
+
+<!-- Styles -->
+
+{% block styles %}
+    {{ super() }}
+    {% include "_styles.html" %}
+    {% block app_styles %}  {% endblock %}
+{% endblock %}
+
+
+<!-- Title -->
+
+{% block title %}
+    {% if title %}{{ title }} - Microblog{% else %}Welcome to ServiceStation{% endif %}
+{% endblock %}
+
+<!-- Content -->
+
+{% block content %}
+    {% include "_navbar.html" %}
+    {% include "_flash.html" %}
+
+    {% block app_content %}  {% endblock %}
+
+    {% include "_footer.html" %}
+{% endblock %}
+
+
+<!-- Scripts -->
+
+{% block scripts %}
+    {{ super() }}
+    {% include "_scripts.html" %}
+    {% block app_scripts %}  {% endblock %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles %}
+    {{ super() }}
+    {% include "_styles.html" %}
+{% endblock %}
+
+
+<!-- Content -->
+
+{% block content %}
+    {% include "_navbar.html" %}
+    {% include "_flash.html" %}
+
+
+    {% include "_footer.html" %}
+{% endblock %}
+
+
+<!-- Scripts -->
+
+{% block scripts %}
+    {{ super() }}
+    {% include "_scripts.html" %}
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block app_styles %}
+    {{ super() }}
+<!--    <link rel="stylesheet" href="{{ url_for('.static', filename='css/user_profile_style.css') }}">-->
+{% endblock %}
+
+{% block app_content %}
+    <main class="content">
+        <div class="jumbotron">
+            <h1 class="form-title">User Profile</h1>
+
+            <div class="card">
+              <div class="card-heading">
+                <h2>Account</h2>
+              </div>
+              <div class="card-body">
+                <p>Email: {{ current_user.email }}</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-heading">
+                <h2>Account Statistics</h2>
+              </div>
+              <div class="card-body">
+                <p>Joined on {{ current_user.created.strftime("%A, %B %d, %Y") }}</p>
+              </div>
+            </div>
+
+            {% for storage_order in current_user.storage_order %}
+                <div class="card">
+                    <div class="card-heading">
+                        <h2>Storage Order {{ storage_order.storage_order_id }}</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Start date: {{ storage_order.start_date }}</p>
+                        <p>Stop date: {{ storage_order.stop_date }}</p>
+                        <p>Order cost: {{ storage_order.storage_order_cost }}</p>
+                        <p>Created: {{ storage_order.created }}</p>
+                        <p>Shelf_id: {{ storage_order.shelf_id}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+{% endblock %}
